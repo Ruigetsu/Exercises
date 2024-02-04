@@ -1,0 +1,2 @@
+# Exercises
+Leetcode ex.

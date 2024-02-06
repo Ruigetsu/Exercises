@@ -1,5 +1,4 @@
 def trailing_zeroes(N): 
-  counter = 1
   factorial = 1
   x = 0
   for i in range(1,N+1):

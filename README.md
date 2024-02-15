@@ -1,2 +1,0 @@
-# Exercises
-Leetcode exercises (easy)

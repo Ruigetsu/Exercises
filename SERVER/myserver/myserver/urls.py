@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from  posts import views
 from posts.views import post_list
-from posts.views import PostAPIView
+from posts.views import update_post
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/posts/', views.post_list, name='posts'),
-    path('api/posts_list/',  views.PostAPIView.as_view()),
+    path('api/posts/', views.post_list, name='post_list'),
+    path('api/posts/<int:pk>/', views.update_post, name='update_post'),
 ]

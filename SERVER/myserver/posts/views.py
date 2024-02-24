@@ -31,7 +31,7 @@ def post_posts(request, format=None):
         return Response("ERROR", status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['PUT', 'DELETE'])
+@api_view(['GET','PUT', 'DELETE'])
 def update_post(request, *args, **kwargs):
     if request.method == 'PUT':
         pk = kwargs.get("pk", None)
